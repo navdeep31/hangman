@@ -74,7 +74,7 @@ def processGuess(inputLetter, selectedWord):
 		
 		if ''.join(currentState)==selectedWord:
 			print ' '.join(currentState)
-			system.exit("You Win!")
+			sys.exit("You Win!")
 		else:
 			print ' '.join(currentState)
 			getGuess(selectedWord)
@@ -134,7 +134,7 @@ def main():
 	del args[0:]
 	
 	selectedWord = getWord(wordLength)	
-	print selectedWord
+	#print selectedWord
 	#print currentState
 	print ' '.join(currentState)
 	
