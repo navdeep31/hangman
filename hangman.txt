@@ -1,0 +1,129 @@
+    print " _________     \n";
+    print "|         |    \n";
+    print "|         0    \n";
+    print "|        /|\   \n";
+    print "|        / \   \n";
+    print "|              \n";
+    print "|              \n";
+	print "|__________    \n";
+	
+	
+    1 
+	print " _________     \n\n\n\n\n\n\n\n"
+	
+	print " _________     \n";
+    print "               \n";
+    print "               \n";
+    print "               \n";
+    print "               \n";
+    print "               \n";
+    print "               \n";
+	print "               \n";
+	
+	2
+	print " _________     \n|\n|\n|\n|\n|\n|\n|\n"
+	
+	print " _________     \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+	print "|              \n";
+	
+	3
+	print " _________     \n|\n|\n|\n|\n|\n|\n|__________    \n"
+	
+	print " _________     \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+	print "|__________    \n";
+	
+	4
+	print " _________     \n|         |    \n|\n|\n|\n|\n|\n|__________    \n"
+	
+	print " _________     \n";
+    print "|         |    \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+	print "|__________    \n";
+	
+	5
+	print " _________     \n|         |    \n|         0    \n|\n|\n|\n|\n|__________    \n"
+	
+	print " _________     \n";
+    print "|         |    \n";
+    print "|         0    \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+	print "|__________    \n";
+	
+	6
+	print " _________     \n|         |    \n|         0    \n|         |    \n|\n|\n|\n|__________    \n"
+	
+	print " _________     \n";
+    print "|         |    \n";
+    print "|         0    \n";
+    print "|         |    \n";
+    print "|              \n";
+    print "|              \n";
+    print "|              \n";
+	print "|__________    \n";
+	
+	7
+	print " _________     \n|         |    \n|         0    \n|         |    \n|        /     \n|\n|\n|__________    \n"
+	
+	print " _________     \n";
+    print "|         |    \n";
+    print "|         0    \n";
+    print "|         |    \n";
+    print "|        /     \n";
+    print "|              \n";
+    print "|              \n";
+	print "|__________    \n";
+	
+	8
+	print " _________     \n|         |    \n|         0    \n|         |    \n|        /     \n|        / \   \n|\n|__________    \n"
+	
+	print " _________     \n";
+    print "|         |    \n";
+    print "|         0    \n";
+    print "|         |    \n";
+    print "|        / \   \n";
+    print "|              \n";
+    print "|              \n";
+	print "|__________    \n";
+	
+	9
+	print " _________     \n|         |    \n|         0    \n|        /|    \n|        /     \n|        / \   \n|\n|__________    \n"
+	
+	print " _________     \n";
+    print "|         |    \n";
+    print "|         0    \n";
+    print "|        /|    \n";
+    print "|        / \   \n";
+    print "|              \n";
+    print "|              \n";
+	print "|__________    \n";
+	
+	10
+	print " _________     \n|         |    \n|         0    \n|        /|\   \n|        /     \n|        / \   \n|\n|__________    \n"
+	
+	print " _________     \n";
+    print "|         |    \n";
+    print "|         0    \n";
+    print "|        /|\   \n";
+    print "|        / \   \n";
+    print "|              \n";
+    print "|              \n";
+	print "|__________    \n";
