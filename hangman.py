@@ -36,7 +36,6 @@ def getWord(wordLength):
 	global currentState
 	for letter in selectedWord:
 		currentState = currentState + "_"
-	#currentState = currentState.strip()
 	currentState = list(currentState)
 	return selectedWord.upper()
 
@@ -50,9 +49,6 @@ def validateGuess(inputLetter):
 	else:
 		usedLetters.append(inputLetter)
 		return True
-	
-
-#def lives():
 
 def getGuess(selectedWord):
 	inputLetter = str(raw_input("\n\nEnter Letter: ")).upper()
@@ -76,7 +72,7 @@ def processGuess(inputLetter, selectedWord):
 			print ' '.join(currentState)
 			sys.exit("You Win!")
 		else:
-			print ' '.join(currentState)
+			print "\n"+' '.join(currentState)
 			getGuess(selectedWord)
 			
 	
@@ -134,19 +130,11 @@ def main():
 	del args[0:]
 	
 	selectedWord = getWord(wordLength)	
-	#print selectedWord
-	#print currentState
-	print ' '.join(currentState)
+	print "\n\n"+ ' '.join(currentState)
 	
 	global livesRemaining
 	livesRemaining = 10
-	#while livesRemaining > 0:
 	getGuess(selectedWord)
-	#processGuess(inputLetter, selectedWord)
-	
-	
-		
-	
 
 if __name__ == '__main__':
   main()
