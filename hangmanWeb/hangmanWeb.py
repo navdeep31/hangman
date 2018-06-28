@@ -1,5 +1,5 @@
-from flask import Flask, flash, redirect, render_template, request, session, abort
-#from flask.ext.session import Session
+from flask import Flask, flash, redirect, render_template, request, session, abort, jsonify
+import json
 import random
 import re
 import sys
@@ -8,19 +8,23 @@ app = Flask(__name__)
 
 app.secret_key = '12345'
 
-#session(game)
+
+@app.route("/hangman")
+def render_homepage():
+    return render_template(
+        'index.html')
 
 
-@app.route("/hangman/newgame/<int:word_length>")
-def newGame(word_length):
+@app.route("/hangman/newgame",  methods=['POST'])
+def new_game():
+    word_length = request.form['word_length'];
     session['word_length'] = str(word_length)
     session['selected_word'] = get_word(session['word_length'])
     session['current_state'] = initialise_current_state(session['selected_word'])
     session['lives_remaining'] = 10
     session['used_letters'] = []
-
     return render_template(
-        'layout.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
+        'gamebody.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
         currentState=' '.join(session['current_state']), usedLetters=' '.join(session['used_letters']))
 
 
@@ -54,18 +58,20 @@ def initialise_current_state(selected_word):
     return current_state
 
 
-@app.route("/hangman/guess/<string:input_letter>")
-def get_guess(input_letter):
+@app.route("/hangman/guess", methods=['POST'])
+def get_guess():
+    input_letter = request.form['input_letter'];
     input_letter = input_letter.upper()
     if validate_guess(input_letter):
         process_guess(input_letter)
     '''else:
         get_guess(session['selected_word'])'''
     print session['used_letters']
+    print ('current state = ' + str(session['current_state']))
     return render_template(
-        'layout.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
+        'gamebody.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
         currentState=' '.join(session['current_state']), usedLetters=(session['used_letters']),
-        inputLetter="received")
+        inputLetter=input_letter, livesRemaining=session['lives_remaining'])
 
 
 def validate_guess(input_letter):
@@ -85,25 +91,22 @@ def validate_guess(input_letter):
 
 def process_guess(input_letter):
     if session['lives_remaining'] >= 0:
+        current_state = session['current_state']
         match_index = [match.start() for match in re.finditer(input_letter, session['selected_word'])]
         if len(match_index) == 0:
             wrong_guess(input_letter)
 
         for index in match_index:
-            session['current_state'] = input_letter
+            current_state[index] = input_letter
+
+        session['current_state'] = current_state
 
         if ''.join(session['current_state']) == session['selected_word']:
             print ' '.join(session['current_state'])
             sys.exit("You Win!")
         else:
             print "\n" + ' '.join(session['current_state'])
-            return render_template(
-                'layout.html')
-            '''return render_template(
-                'layout.html', session=session, wordLength=session['word_length'],
-                selectedWord=session['selected_word'], currentState=' '.join(session['current_state']),
-                usedLetters=(session['used_letters']))'''
-            #getGuess(game.selectedWord)
+            return
 
 
 def wrong_guess(input_letter):
@@ -130,4 +133,4 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=80, debug=True)

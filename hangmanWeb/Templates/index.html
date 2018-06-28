@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Hangman</title>
+		<title>Hangman</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="{{ url_for('static', filename = 'js/hangmanWeb.js') }}"></script>
     </head>
 
     <body>
+        <div class="container">
+            <div class="row">
+                <h1 class="text-center">Hangman</h1>
+            </div>
 
-        <h1>Hangman</h1>
-        <div>
-            <label for="lengthBox">Word Length:</label>
-            <input type="text" id="lengthBox" name="lengthBox" required
-               minLength="1" maxLength="2"
-               placeholder="Enter Word Length" />
-
-            <button onclick="postLength()">Submit</button>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <!--action="/hangman/game" method="get"-->
+                     <form   class="form-inline" role="form" >
+                        <label for="lengthBox">Word Length:</label>
+                         <input type="text" class="form-control" id="lengthBox" name="word_length" required
+                                minLength="1" maxLength="2" placeholder="Enter Word Length" />
+                         <button  class="btn btn-primary" id="lengthButton">Submit</button>
+                         <!--type="submit"-->
+                     </form>
+                </div>
+            </div>
         </div>
-
-
-    <script>
-        function postLength() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.open("GET", "/hangman/newgame/"+document.getElementById("lengthBox").value, true);
-            xhttp.setRequestHeader("Content-type", "application/json");
-            xhttp.send(null);
-            //var response = JSON.parse(xhttp.responseText);
-         }
-
-
-    </script>
-
-
-
     </body>
 
 </html>

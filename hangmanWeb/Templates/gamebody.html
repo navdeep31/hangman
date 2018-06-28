@@ -1,0 +1,31 @@
+<div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="text-center">Hangman</h1>
+                </div>
+            </div>
+
+             <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class><div id="currentState">{{currentState}}</div></h2>
+                </div>
+                 <div class="col-md-12 text-center">
+                     <canvas id="html-canvas"></canvas>
+                 </div>
+
+            </div>
+            <div class="col-md-12 text-center">
+                <div id="usedLetters">Used Letters: {{usedLetters}}</div>
+                <!--action="/hangman/guess" method="post"-->
+                <form class="form-inline" role="form">
+                    <label for="guessBox">Guess:</label>
+                    <input type="text" id="guessBox" name="input_letter" required
+                       minLength="1" maxLength="1"
+                       placeholder="Enter Letter" />
+
+                    <button  class="btn btn-primary" id="guessButton">Guess</button>
+                    <!--type="submit"-->
+                </form>
+            </div>
+        </div>
+    </body>

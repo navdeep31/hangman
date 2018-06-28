@@ -1,0 +1,12 @@
+canvas {
+  //height: 50vh;
+  //width: 100%;
+  //position: absolute;
+  height: 600px;
+  width: 600px;
+  background-color: #ffffff;
+  border: 1px solid;
+}
+  margin: 0;
+  padding: 0;
+}
