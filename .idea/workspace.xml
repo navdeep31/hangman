@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dee6f32d-0a17-4862-9853-d57d64aa3b2e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/hangmanWeb/Static/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hangmanWeb/Templates/lose.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hangmanWeb/Templates/win.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hangmanWeb/Static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/hangmanWeb/Static/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hangmanWeb/Static/js/hangmanWeb.js" beforeDir="false" afterPath="$PROJECT_DIR$/hangmanWeb/Static/js/hangmanWeb.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hangmanWeb/Templates/gamebody.html" beforeDir="false" afterPath="$PROJECT_DIR$/hangmanWeb/Templates/gamebody.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hangmanWeb/Templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hangmanWeb/Templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hangmanWeb/hangmanWeb.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangmanWeb/hangmanWeb.py" afterDir="false" />
     </list>
@@ -19,7 +23,7 @@
       <file leaf-file-name="hangman.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
+            <state relative-caret-position="-185">
               <caret line="77" column="31" lean-forward="true" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
@@ -31,8 +35,8 @@
       <file leaf-file-name="hangmanWeb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hangmanWeb/hangmanWeb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+            <state relative-caret-position="289">
+              <caret line="79" column="76" lean-forward="true" selection-start-line="79" selection-start-column="76" selection-end-line="79" selection-end-column="76" />
               <folding>
                 <element signature="e#0#91#0" expanded="true" />
               </folding>
@@ -43,8 +47,26 @@
       <file leaf-file-name="gamebody.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/gamebody.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+            <state relative-caret-position="306">
+              <caret line="18" column="35" selection-end-line="31" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lose.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/lose.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="win.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/win.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -52,7 +74,7 @@
       <file leaf-file-name="game.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/game.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="71">
+            <state relative-caret-position="-314">
               <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="87" />
             </state>
           </provider>
@@ -61,8 +83,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangmanWeb/Static/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -70,8 +92,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
+            <state relative-caret-position="255">
+              <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -79,8 +101,8 @@
       <file leaf-file-name="hangmanWeb.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangmanWeb/Static/js/hangmanWeb.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+            <state relative-caret-position="518">
+              <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
             </state>
           </provider>
         </entry>
@@ -97,6 +119,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>print</find>
+      <find>/hangman/guess</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -115,15 +138,17 @@
         <option value="$PROJECT_DIR$/hangmanWeb/Templates/layout.html" />
         <option value="$PROJECT_DIR$/hangmanWeb/game.html" />
         <option value="$PROJECT_DIR$/hangmanWeb/Templates/game.html" />
-        <option value="$PROJECT_DIR$/hangmanWeb/Static/css/main.css" />
         <option value="$PROJECT_DIR$/hangmanWeb/Templates/index.html" />
-        <option value="$PROJECT_DIR$/hangmanWeb/Static/js/hangmanWeb.js" />
+        <option value="$PROJECT_DIR$/hangmanWeb/Static/css/main.css" />
         <option value="$PROJECT_DIR$/hangmanWeb/Templates/gamebody.html" />
+        <option value="$PROJECT_DIR$/hangmanWeb/Static/js/hangmanWeb.js" />
+        <option value="$PROJECT_DIR$/hangmanWeb/Templates/lose.html" />
+        <option value="$PROJECT_DIR$/hangmanWeb/Templates/win.html" />
         <option value="$PROJECT_DIR$/hangmanWeb/hangmanWeb.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-46" />
     <option name="y" value="-14" />
     <option name="width" value="1346" />
@@ -227,20 +252,20 @@
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32996634" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.13988096" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Run" order="6" />
       <window_info anchor="bottom" id="Python Console" order="0" />
+      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="3" weight="0.32996634" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info id="Favorites" order="0" side_tool="true" />
     </layout-to-restore>
@@ -364,9 +389,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hangmanWeb/Static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hangman.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
+        <state relative-caret-position="-185">
           <caret line="77" column="31" lean-forward="true" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
@@ -374,45 +413,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/game.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="71">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hangmanWeb/Static/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="7" column="87" selection-start-line="7" selection-start-column="87" selection-end-line="7" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/gamebody.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+        <state relative-caret-position="306">
+          <caret line="18" column="35" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/win.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hangmanWeb/Static/js/hangmanWeb.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state relative-caret-position="518">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/game.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-314">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/lose.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hangmanWeb/hangmanWeb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="68" column="26" selection-start-line="68" selection-start-column="26" selection-end-line="68" selection-end-column="26" />
+        <state relative-caret-position="289">
+          <caret line="79" column="76" lean-forward="true" selection-start-line="79" selection-start-column="76" selection-end-line="79" selection-end-column="76" />
           <folding>
             <element signature="e#0#91#0" expanded="true" />
           </folding>

@@ -11,7 +11,7 @@
 		<script type="text/javascript" src="{{ url_for('static', filename = 'js/hangmanWeb.js') }}"></script>
     </head>
 
-    <body>
+    <body id="body">
         <div class="container">
             <div class="row">
                 <h1 class="text-center">Hangman</h1>
@@ -20,13 +20,13 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <!--action="/hangman/game" method="get"-->
-                     <form   class="form-inline" role="form" >
+                     <div  class="form-inline" role="form" >
                         <label for="lengthBox">Word Length:</label>
                          <input type="text" class="form-control" id="lengthBox" name="word_length" required
                                 minLength="1" maxLength="2" placeholder="Enter Word Length" />
                          <button  class="btn btn-primary" id="lengthButton">Submit</button>
                          <!--type="submit"-->
-                     </form>
+                     </div>
                 </div>
             </div>
         </div>

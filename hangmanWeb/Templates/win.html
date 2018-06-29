@@ -18,14 +18,9 @@
                 <div id="usedLetters">Used Letters: {{usedLetters}}</div>
                 <div id="livesRemaining" hidden>{{livesRemaining}}</div>
                 <!--action="/hangman/guess" method="post"-->
-                <div class="form-inline" role="form">
-                    <label for="guessBox">Guess:</label>
-                    <input type="text" id="guessBox" name="input_letter" required
-                       minLength="1" maxLength="1"
-                       placeholder="Enter Letter" />
-
-                    <button  class="btn btn-primary" id="guessButton">Guess</button>
-                    <!--type="submit"-->
+                <div >
+                    <h2>YOU WIN!</h2>
+                    <h3>Answer {{selectedWord}}</h3>
                 </div>
             </div>
         </div>

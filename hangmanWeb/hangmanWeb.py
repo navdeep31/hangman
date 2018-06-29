@@ -57,21 +57,51 @@ def initialise_current_state(selected_word):
     current_state = list(current_state)
     return current_state
 
+@app.route("/hangman/guess", methods=['GET'])
+def get_guess1():
+    return "GET request not post"
+
 
 @app.route("/hangman/guess", methods=['POST'])
 def get_guess():
     input_letter = request.form['input_letter'];
     input_letter = input_letter.upper()
+    result = 0
     if validate_guess(input_letter):
         process_guess(input_letter)
     '''else:
         get_guess(session['selected_word'])'''
     print session['used_letters']
     print ('current state = ' + str(session['current_state']))
+
     return render_template(
         'gamebody.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
-        currentState=' '.join(session['current_state']), usedLetters=(session['used_letters']),
+        currentState=' '.join(session['current_state']), usedLetters=' '.join(session['used_letters']),
         inputLetter=input_letter, livesRemaining=session['lives_remaining'])
+
+    '''if result ==0:
+        return render_template(
+            'gamebody.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
+            currentState=' '.join(session['current_state']), usedLetters=' '.join(session['used_letters']),
+            inputLetter=input_letter, livesRemaining=session['lives_remaining'])
+    elif result==1:
+        return render_template(
+            'lose.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
+            currentState=' '.join(session['current_state']), usedLetters=' '.join(session['used_letters']),
+            inputLetter=input_letter, livesRemaining=session['lives_remaining'])
+    elif result==2:
+        return render_template(
+            'win.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
+            currentState=' '.join(session['current_state']), usedLetters=' '.join(session['used_letters']),
+            inputLetter=input_letter, livesRemaining=session['lives_remaining'])
+    '''
+
+    #return result
+
+    '''render_template(
+        'gamebody.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
+        currentState=' '.join(session['current_state']), usedLetters=' '.join(session['used_letters']),
+        inputLetter=input_letter, livesRemaining=session['lives_remaining'])'''
 
 
 def validate_guess(input_letter):
@@ -103,6 +133,11 @@ def process_guess(input_letter):
 
         if ''.join(session['current_state']) == session['selected_word']:
             print ' '.join(session['current_state'])
+            return 2
+            render_template(
+                'win.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
+                currentState=' '.join(session['current_state']), usedLetters=' '.join(session['used_letters']),
+            inputLetter=input_letter, livesRemaining=session['lives_remaining'])
             sys.exit("You Win!")
         else:
             print "\n" + ' '.join(session['current_state'])
@@ -115,12 +150,17 @@ def wrong_guess(input_letter):
     session['lives_remaining'] -= 1
 
     if session['lives_remaining'] == 0:
-        print_hangman()
+        return render_template(
+            'lose.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
+            currentState=' '.join(session['current_state']), usedLetters=' '.join(session['used_letters']),
+            inputLetter=input_letter, livesRemaining=session['lives_remaining'])
         sys.exit("You Lose. Answer: " + session['selected_word'])
     else:
-        print_hangman()
-        print ' '.join(session['current_state'])
-        #get_guess()
+        return render_template(
+            'gamebody.html', session=session, wordLength=session['word_length'], selectedWord=session['selected_word'],
+            currentState=' '.join(session['current_state']), usedLetters=' '.join(session['used_letters']),
+            inputLetter=input_letter, livesRemaining=session['lives_remaining'])
+
 
 
 def print_hangman():
