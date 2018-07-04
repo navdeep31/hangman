@@ -4,16 +4,20 @@ $(document).ready(function(){
             e.preventDefault()
 			console.log('button clicked');
 			$.ajax({
-                url: '/hangman/newgame',
-                data: $('#lengthBox').serialize(),
-                type: 'POST',
-                success: function(response) {
-                    console.log(response);
-                    $('body').html(response);
-                    drawCanvas();
-                },
-                error: function(error) {
-                    console.log(error);
+			    if ($('#lengthBox') < 3 || $('#lengthBox')> 10){
+			        alert('Enter Word Length between 3 and 10')
+			    } else {
+                    url: '/hangman/newgame',
+                    data: $('#lengthBox').serialize(),
+                    type: 'POST',
+                    success: function(response) {
+                        console.log(response);
+                        $('body').html(response);
+                        drawCanvas();
+                    },
+                    error: function(error) {
+                        console.log(error);
+                    }
                 }
             });
         });
