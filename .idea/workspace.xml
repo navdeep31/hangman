@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dee6f32d-0a17-4862-9853-d57d64aa3b2e" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/hangmanWeb/Templates/lose.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hangmanWeb/Templates/win.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangmanWeb/Static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/hangmanWeb/Static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangmanWeb/Static/js/hangmanWeb.js" beforeDir="false" afterPath="$PROJECT_DIR$/hangmanWeb/Static/js/hangmanWeb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangmanWeb/Templates/gamebody.html" beforeDir="false" afterPath="$PROJECT_DIR$/hangmanWeb/Templates/gamebody.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hangmanWeb/Templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/hangmanWeb/Templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/hangmanWeb/hangmanWeb.py" beforeDir="false" afterPath="$PROJECT_DIR$/hangmanWeb/hangmanWeb.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,8 +17,8 @@
       <file leaf-file-name="hangman.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangman.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-185">
-              <caret line="77" column="31" lean-forward="true" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
+            <state relative-caret-position="172">
+              <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -35,8 +29,8 @@
       <file leaf-file-name="hangmanWeb.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/hangmanWeb/hangmanWeb.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="79" column="76" lean-forward="true" selection-start-line="79" selection-start-column="76" selection-end-line="79" selection-end-column="76" />
+            <state relative-caret-position="128">
+              <caret line="145" column="19" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="19" />
               <folding>
                 <element signature="e#0#91#0" expanded="true" />
               </folding>
@@ -56,8 +50,8 @@
       <file leaf-file-name="lose.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/lose.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+            <state relative-caret-position="51">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -132,7 +126,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/hangmanWeb/hangmanApi.py" />
-        <option value="$PROJECT_DIR$/hangman.py" />
         <option value="$PROJECT_DIR$/pythonTests/pythonTests.py" />
         <option value="$PROJECT_DIR$/hangmanWeb/app.py" />
         <option value="$PROJECT_DIR$/hangmanWeb/Templates/layout.html" />
@@ -144,6 +137,7 @@
         <option value="$PROJECT_DIR$/hangmanWeb/Static/js/hangmanWeb.js" />
         <option value="$PROJECT_DIR$/hangmanWeb/Templates/lose.html" />
         <option value="$PROJECT_DIR$/hangmanWeb/Templates/win.html" />
+        <option value="$PROJECT_DIR$/hangman.py" />
         <option value="$PROJECT_DIR$/hangmanWeb/hangmanWeb.py" />
       </list>
     </option>
@@ -403,30 +397,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hangman.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-185">
-          <caret line="77" column="31" lean-forward="true" selection-start-line="77" selection-start-column="31" selection-end-line="77" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/gamebody.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="35" selection-end-line="31" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/win.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hangmanWeb/Static/js/hangmanWeb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="518">
@@ -441,17 +411,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hangman.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="96" lean-forward="true" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/win.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="14" lean-forward="true" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/gamebody.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="35" selection-end-line="31" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/hangmanWeb/Templates/lose.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="22" lean-forward="true" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        <state relative-caret-position="51">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hangmanWeb/hangmanWeb.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="79" column="76" lean-forward="true" selection-start-line="79" selection-start-column="76" selection-end-line="79" selection-end-column="76" />
+        <state relative-caret-position="128">
+          <caret line="145" column="19" selection-start-line="145" selection-start-column="19" selection-end-line="145" selection-end-column="19" />
           <folding>
             <element signature="e#0#91#0" expanded="true" />
           </folding>
