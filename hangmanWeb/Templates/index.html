@@ -20,13 +20,13 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <!--action="/hangman/game" method="get"-->
-                     <div  class="form-inline" role="form" >
+                     <form  class="form-inline" role="form" >
                         <label for="lengthBox">Word Length:</label>
-                         <input type="text" class="form-control" id="lengthBox" name="word_length" required
-                                minLength="1" maxLength="2" placeholder="Enter Word Length" />
-                         <button  class="btn btn-primary" id="lengthButton">Submit</button>
+                         <input type="number" class="form-control" id="lengthBox" name="word_length" required
+                                minLength="1" maxLength="2" min ="3" max="10" placeholder="Enter Word Length between 3 and 10" style="width:275px"/>
+                         <button  type="submit" class="btn btn-primary" id="lengthButton">Submit</button>
                          <!--type="submit"-->
-                     </div>
+                     </form>
                 </div>
             </div>
         </div>
