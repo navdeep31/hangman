@@ -142,11 +142,6 @@ def wrong_guess(input_letter):
         return 0
 
 
-
-def print_hangman():
-    print ''
-
-
 @app.route("/")
 def index():
     return "Hangman"

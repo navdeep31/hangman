@@ -4,9 +4,9 @@ $(document).ready(function(){
             e.preventDefault()
 			console.log('button clicked');
 			$.ajax({
-			    if ($('#lengthBox') < 3 || $('#lengthBox')> 10){
-			        alert('Enter Word Length between 3 and 10')
-			    } else {
+			    /*if ($('#lengthBox') < 3 || $('#lengthBox') > 10) {
+			        alert('Enter Word Length between 3 and 10');
+			    } else {*/
                     url: '/hangman/newgame',
                     data: $('#lengthBox').serialize(),
                     type: 'POST',
@@ -18,7 +18,7 @@ $(document).ready(function(){
                     error: function(error) {
                         console.log(error);
                     }
-                }
+                //}
             });
         });
 
